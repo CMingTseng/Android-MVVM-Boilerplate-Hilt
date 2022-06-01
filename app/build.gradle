@@ -16,10 +16,11 @@ android {
     }
     defaultConfig {
         applicationId "com.aregyan.github"
-        minSdkVersion 23
+        minSdkVersion 16
         targetSdkVersion 31
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -45,6 +46,7 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutine_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutine_version"
 
+    implementation "androidx.multidex:multidex:2.0.1"
     implementation "androidx.core:core-ktx:$ktx_version"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "com.google.android.material:material:$material_version"
